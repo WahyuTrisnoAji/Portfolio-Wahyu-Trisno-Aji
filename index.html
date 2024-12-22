@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
     <link href="src/output.css" rel="stylesheet" />
+    <title>Portfolio</title>
+    <style>
+      .hidden-img .hidden-content {
+        display: none;
+      }
+
+      .card1:hover .hidden-content, .card2:hover .hidden-content, .card3:hover .hidden-content {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <!-- section hero -->
-    <section id="home"   class="pt-36 bg-cover bg-center bg-no-repeat relative z-0"
+    <section id="home" class="pt-36 bg-cover bg-center bg-no-repeat relative z-0"
     style="background-image: url('Assets/asfalt--light--1920x1080.png')">
       <div class="container">
         <div class="flex flex-wrap items-center">
@@ -75,6 +84,44 @@
                 </svg></svg
               ></span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-36">
+      <div class="container flex items-center justify-center">
+        <div class="flex flex-col items-center justify-center text-center">
+            <h3 class="text-3xl font-bold text-primary">Know My <span class="text-blue-900">Services </span> <span class="block">Then We Can <span class="text-blue-900">Work Together</span></span></h3>
+          <div class="flex flex-wrap justify-center gap-32 my-20">
+
+              <div class="card1 flex flex-col items-center text-center bg-white w-72 shadow-md shadow-slate-400 rounded-lg px-4 py-2 transition transform hover:scale-110 duration-300 ease-in-out hover:shadow-lg hover:opacity-50">
+              <img src="Assets/gummy-macbook.png" alt="" class="w-56 h-56">
+              <h2 class="text-base font-semibold text-primary leading-relaxed">Lorem ipsum dolor sit amet.</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sed!</p>
+              <a href="#" class="hidden-img">
+                <img  src="Assets/388833.svg" alt="" class="hidden-content">
+              </a>
+            </div>
+           
+            <div class="card2 flex flex-col items-center  bg-white w-72 shadow-md shadow-slate-400 rounded-lg px-4 py-2 transition transform hover:scale-110 duration-300 ease-in-out hover:shadow-lg hover:opacity-50">
+              <img src="Assets/gummy-programming.png" alt="" class="w-56 h-56">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sed!</p>
+              <a href="#" class="hidden-img">
+                <img  src="Assets/388833.svg" alt="" class="hidden-content">
+              </a>
+            </div>
+           
+            <div class="card3 flex flex-col items-center  bg-white w-72 shadow-md shadow-slate-400 rounded-lg px-4 py-2 transition transform hover:scale-110 duration-300 ease-in-out hover:shadow-lg hover:opacity-50">
+              <img src="Assets/pixeltrue-icons-web-design-planning-1.png" alt="" class="w-56 h-56">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sed!</p>
+              <a href="#" class="hidden-img">
+                <img  src="Assets/388833.svg" alt="" class="hidden-content">
+              </a>
+            </div>
+            
           </div>
         </div>
       </div>
