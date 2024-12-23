@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/output.css" rel="stylesheet" />
     <title>Portfolio</title>
-    <style>
-      .hidden-img .hidden-content {
-        display: none;
-      }
-
-      .card1:hover .hidden-content, .card2:hover .hidden-content, .card3:hover .hidden-content {
-        display: block;
-      }
-    </style>
   </head>
   <body>
     <!-- section hero -->
@@ -89,42 +80,112 @@
       </div>
     </section>
 
+    <!-- section services -->
     <section id="services" class="py-36">
       <div class="container flex items-center justify-center">
         <div class="flex flex-col items-center justify-center text-center">
             <h3 class="text-3xl font-bold text-primary">Know My <span class="text-blue-900">Services </span> <span class="block">Then We Can <span class="text-blue-900">Work Together</span></span></h3>
-          <div class="flex flex-wrap justify-center gap-32 my-20">
-
-              <div class="card1 flex flex-col items-center text-center bg-white w-72 shadow-md shadow-slate-400 rounded-lg px-4 py-2 transition transform hover:scale-110 duration-300 ease-in-out hover:shadow-lg hover:opacity-50">
+          
+            <div class="flex flex-wrap justify-center gap-32 my-20">
+              <div class="flex flex-col items-center text-center bg-white w-72 shadow-md shadow-slate-400 rounded-lg px-4 py-2 transition transform hover:scale-110 duration-300 ease-in-out hover:shadow-lg ">
               <img src="Assets/gummy-macbook.png" alt="" class="w-56 h-56">
-              <h2 class="text-base font-semibold text-primary leading-relaxed">Lorem ipsum dolor sit amet.</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sed!</p>
-              <a href="#" class="hidden-img">
-                <img  src="Assets/388833.svg" alt="" class="hidden-content">
-              </a>
+              <h2 class="text-xl font-bold text-primary leading-relaxed">Web Developer</h2>
+              <p class="font-normal text-slate-400 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sed!</p>
             </div>
            
-            <div class="card2 flex flex-col items-center  bg-white w-72 shadow-md shadow-slate-400 rounded-lg px-4 py-2 transition transform hover:scale-110 duration-300 ease-in-out hover:shadow-lg hover:opacity-50">
+            <div class="flex flex-col items-center  bg-white w-72 shadow-md shadow-slate-400 rounded-lg px-4 py-2 transition transform hover:scale-110 duration-300 ease-in-out hover:shadow-lg">
               <img src="Assets/gummy-programming.png" alt="" class="w-56 h-56">
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sed!</p>
-              <a href="#" class="hidden-img">
-                <img  src="Assets/388833.svg" alt="" class="hidden-content">
-              </a>
+              <h2 class="text-xl font-bold text-primary leading-relaxed">Frontend Developer</h2>
+              <p class="font-normal text-slate-400 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sed!</p>
             </div>
            
-            <div class="card3 flex flex-col items-center  bg-white w-72 shadow-md shadow-slate-400 rounded-lg px-4 py-2 transition transform hover:scale-110 duration-300 ease-in-out hover:shadow-lg hover:opacity-50">
+            <div class="flex flex-col items-center  bg-white w-72 shadow-md shadow-slate-400 rounded-lg px-4 py-2 transition transform hover:scale-110 duration-300 ease-in-out hover:shadow-lg">
               <img src="Assets/pixeltrue-icons-web-design-planning-1.png" alt="" class="w-56 h-56">
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sed!</p>
-              <a href="#" class="hidden-img">
-                <img  src="Assets/388833.svg" alt="" class="hidden-content">
-              </a>
-            </div>
-            
+              <h2 class="text-xl font-bold text-primary leading-relaxed">UI Website Design</h2>
+              <p class="font-normal text-slate-400 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, sed!</p>
+            </div> 
           </div>
         </div>
       </div>
     </section>
+
+    <!-- section portfolio -->
+     <section id="portfolio" class="py-36 bg-slate-200">
+      <div class="container">
+        <div class="flex flex-col items-center justify-center text-center">
+          <h3 class="text-3xl font-bold text-primary">Check It Out My<span class="text-blue-900"> Portfolio</span> Section</h3>
+          
+          <div class=" flex flex-wrap justify-center gap-24 my-20">
+            <div class="w-96 mr-6 my-12 rounded-md shadow-md hover:shadow-slate-600 duration-300 ease-in-out bg-white">
+              <div class=" w-full">
+                <img src="Assets/Portfolio-School.png" alt="" class="rounded-md">
+              </div>
+              <div class="p-4">
+                <div class="flex justify-between">
+                  <h4 class="font-bold">School Website</h4>
+                  <a href="#" class="hover:animate-bounce transition duration-600 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z"/></svg>
+                  </a>
+                </div>
+                
+                <div class="flex justify-items-start gap-4 py-4">
+                  <div class="bg-white shadow-inner shadow-slate-100 px-4 py-2 font-normal text-slate-400 leading-relaxed">HMTL</div>
+                  <div class="bg-white shadow-inner shadow-slate-100 px-4 py-2 font-normal text-slate-400 leading-relaxed">Tailwindcss</div>
+                  <div class="bg-white shadow-inner shadow-slate-100 px-4 py-2 font-normal text-slate-400 leading-relaxed">JavaScript</div>
+                </div>
+                
+                <p class="text-justify font-normal text-slate-400 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae tenetur nisi quo, autem dolor quibusdam?</p>
+              </div>
+            </div>
+            
+            <div class="w-96 mr-6 my-12 rounded-md shadow-md hover:shadow-slate-600 duration-300 ease-in-out bg-white">
+              <div class=" w-full">
+                <img src="Assets/Portfolio-Gym.png" alt="" class="rounded-md">
+              </div>
+              <div class="p-4">
+                <div class="flex justify-between">
+                  <h4 class="font-bold">Win Gym Website</h4>
+                  <a href="#" class="hover:animate-bounce transition duration-600 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z"/></svg>
+                  </a>
+                </div>
+                
+                <div class="flex justify-items-start gap-4 py-4">
+                  <div class="bg-white shadow-inner shadow-slate-100 px-4 py-2 font-normal text-slate-400 leading-relaxed">HMTL</div>
+                  <div class="bg-white shadow-inner shadow-slate-100 px-4 py-2 font-normal text-slate-400 leading-relaxed">CSS</div>
+                  <div class="bg-white shadow-inner shadow-slate-100 px-4 py-2 font-normal text-slate-400 leading-relaxed">JavaScript</div>
+                </div>
+                
+                <p class="text-justify font-normal text-slate-400 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae tenetur nisi quo, autem dolor quibusdam?</p>
+              </div>
+            </div>
+
+            <div class="w-96 mr-6 my-12 rounded-md shadow-md hover:shadow-slate-600 duration-300 ease-in-out bg-white">
+              <div class=" w-full">
+                <img src="Assets/Portfolio-Cafe.png" alt="" class="rounded-md">
+              </div>
+              <div class="p-4">
+                <div class="flex justify-between">
+                  <h4 class="font-bold">Kopi Win Solution Website</h4>
+                  <a href="#" class="hover:animate-bounce transition duration-600 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z"/></svg>
+                  </a>
+                </div>
+                
+                <div class="flex justify-items-start gap-4 py-4">
+                  <div class="bg-white shadow-inner shadow-slate-100 px-4 py-2 font-normal text-slate-400 leading-relaxed">HMTL</div>
+                  <div class="bg-white shadow-inner shadow-slate-100 px-4 py-2 font-normal text-slate-400 leading-relaxed">CSS</div>
+                  <div class="bg-white shadow-inner shadow-slate-100 px-4 py-2 font-normal text-slate-400 leading-relaxed">JavaScript</div>
+                </div>
+                
+                <p class="text-justify font-normal text-slate-400 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae tenetur nisi quo, autem dolor quibusdam?</p>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+     </section>
+
+
   </body>
 </html>
