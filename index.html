@@ -4,7 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/output.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
     <title>Portfolio</title>
+
+    <style>
+      /* activities section */
+      .no-scrollbar {
+          scrollbar-width: none; 
+          -ms-overflow-style: none; 
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+          display: none; 
+      }
+
+      .snap-x {
+        scroll-snap-type: x mandatory;
+      }
+
+      .snap-center {
+        scroll-snap-align: center;
+      }
+
+
+      /* contact section */
+      .hover\:shadow-lg:hover {
+        box-shadow: 0 8px 24px rgba(255, 255, 255, 0.5);
+      }
+
+      .hover\:shadow-lg:hover {
+         box-shadow: 0 8px 24px rgba(0, 123, 255, 0.5); 
+      }
+
+
+    </style>
   </head>
   <body>
     <!-- section hero -->
@@ -113,7 +147,7 @@
      <section id="portfolio" class="py-36 bg-slate-200">
       <div class="container flex items-center justify-center">
         <div class="flex flex-col items-center justify-center text-center">
-          <h3 class="text-3xl font-bold text-primary">Check It Out My<span class="text-blue-900"> Portfolio</span> Section</h3>
+          <h3 class="text-3xl font-bold text-primary">Check Out My<span class="text-blue-900"> Portfolio</span> Section</h3>
           
           <div class=" flex flex-wrap justify-center gap-24 my-20">
             <div class="w-96 mr-6 my-12 rounded-md shadow-md hover:shadow-slate-600 duration-300 ease-in-out bg-white">
@@ -165,7 +199,7 @@
                 <img src="Assets/Portfolio-Cafe.png" alt="" class="rounded-md">
               </div>
               <div class="p-4">
-                <div class="flex justify-between">
+                <div class="flex justify-between self-end">
                   <h4 class="font-bold">Kopi Win Solution Website</h4>
                   <a href="#" class="hover:animate-bounce transition duration-600 ease-in-out">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z"/></svg>
@@ -187,6 +221,7 @@
      </section>
 
 
+    <!-- section skills and experiences -->
      <section id="Skills-experiences" class="py-36">
       <div class="container">
         <div class="flex flex-col items-center justify-center text-center">
@@ -245,32 +280,165 @@
               </div>
             </div>
 
-            <div class="w-full self-end px-4 lg:w-1/2">
-              
-                <div class="flex flex-nowrap  md:pt-32">
-                  <h3 class="font-semibold ">PIC COMPETITIVE PROGRAMMING</h3>
-                  <P class="self-end text-blue-800">July 2024 - September 2024</P>
+            <div class="w-full px-4 lg:w-1/2 md:mt-20">
+              <div class="mb-8">
+                <div class="flex justify-between items-center">
+                  <h3 class="font-bold">Himpunan Mahasiswa Informatika</h3>
+                  <p class="text-blue-800 font-bold">2024</p>
                 </div>
-                <p class="text-left">I successfully increased participant achievement to 100% of the target by ensuring the quality and feasibility of competition questions through creation, categorization, and testing. Additionally, I effectively resolved cheating issues during the competition.</p>
-                <div class="flex flex-nowrap self-end gap-8 md:pt-32">
-                  <h3 class=" ">PIC COMPETITIVE PROGRAMMING</h3>
-                  <P class="">July 2024 - September 2024</P>
-                </div>
-                <div class="flex flex-nowrap self-end gap-8 md:pt-32">
-                  <h3 class=" ">PIC COMPETITIVE PROGRAMMING</h3>
-                  <P class="">July 2024 - September 2024</P>
-                </div>
-                <div class="flex flex-nowrap self-end gap-8 md:pt-32">
-                  <h3 class=" ">PIC COMPETITIVE PROGRAMMING</h3>
-                  <P class="">July 2024 - September 2024</P>    
-                </div>
-             
+                <ul class="text-left mt-2 list-disc my-4">
+                  <li class="font-semibold">PIC of Competitive Programming SRIFOTON | <span class="text-blue-800">July - November</span>
+                    <p class="text-slate-400 font-normal">Successfully increased participant achievement to 100% of the target by ensuring the quality and feasibility of competition questions through creation, categorization, and testing. Additionally, I effectively resolved cheating issues during the competition</p>
+                  </li>
+                  <li class="font-semibold">Human Resource Staff Pelatihan Pemrograman | <span class="text-blue-800">September - Oktober</span>
+                    <p class="text-slate-400 font-normal">Responsible for ensuring the smooth running of learning sessions, reporting activities, and collaborating with the team to maintain participants' motivation during evaluation sessions, successfully sustaining their interest in every learning session.</p>
+                  </li>
+                  <li class="font-semibold">Head of Webinar Bidang Riset  |  <span class="text-blue-800">July</span>
+                    <p class="text-slate-400 font-normal">Responsible for preparing the necessary permits for the event, establishing and maintaining clear communication with speakers to avoid miscommunication, and coordinating the team to address any potential challenges that may hinder the event.</p>
+                  </li>
+                  <li class="font-semibold">Exhibition Staff IFFEST |  <span class="text-blue-800">April - Mei</span>
+                    <p class="text-slate-400 font-normal">Responsible for planning the event concept with the team, developing a terms of reference to guide administrative requirements, and ensuring all needs are met for the smooth execution of the event.</p>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
      </section>
 
+
+     <section id="activity" class="py-36 bg-slate-200">
+      <div class="container">
+        <div class="flex flex-col items-center justify-center text-center">
+          <h3 class="text-3xl font-bold text-primary">
+            Discover My <span class="text-blue-900">Activities</span>
+          </h3>
+          <div class="overflow-hidden w-full mt-8">
+            <div class="flex w-full gap-8 my-20 snap-x snap-mandatory overflow-x-scroll no-scrollbar">
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-1.jpeg" alt="Activity 1" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-2.jpeg" alt="Activity 2" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-3.jpeg" alt="Activity 3" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-4.jpeg" alt="Activity 4" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-5.jpeg" alt="Activity 5" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-6.webp" alt="Activity 5" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-7.webp" alt="Activity 5" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-8.webp" alt="Activity 5" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-9.webp" alt="Activity 5" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+              <div class="flex-shrink-0 snap-center">
+                <img src="Assets/activity-10.webp" alt="Activity 5" class="w-64 h-64 object-cover rounded-lg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+     <!-- section contact -->
+     <section id="contact" class="py-36">
+      <div class="container mx-auto">
+        <div class="flex flex-col items-center justify-center text-center">
+          <h3 class="text-3xl font-bold text-primary mb-6">Reach Me Anytime</h3>
+    
+          <form class="w-full max-w-lg my-20" action="https://formspree.io/f/xgvvorvy" method="POST">
+            <div class="flex items-center bg-white rounded-lg py-2 px-4 mt-4 shadow-md hover:shadow-lg hover:shadow-white transition duration-300">
+              <i class="fas fa-user text-gray-400 mr-2"></i>
+              <input class="w-full p-2 bg-transparent outline-none" type="text" name="name" placeholder="Your Name">
+            </div>
+            <div class="flex items-center bg-white rounded-lg py-2 px-4 mt-4 shadow-md hover:shadow-lg hover:shadow-white transition duration-300">
+              <i class="fas fa-envelope text-gray-400 mr-2"></i>
+              <input class="w-full p-2 bg-transparent outline-none" type="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="flex items-center bg-white rounded-lg py-2 px-4 mt-4 shadow-md hover:shadow-lg hover:shadow-white transition duration-300">
+              <i class="fas fa-comment text-gray-400 mr-2"></i>
+              <textarea class="w-full p-2 bg-transparent outline-none resize-none" rows="3" name="message" placeholder="Your Message"></textarea>
+            </div>
+            <button
+              class="bg-primary text-white rounded-lg py-2 px-6 mt-6 shadow-md hover:shadow-lg hover:shadow-blue-300 transition duration-300 w-full"
+              type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="pb-8">
+      <div class="container">
+        <div class="flex items-center justify-between text-center">
+          <div class="flex gap-4">
+            <a
+            href="#"
+            class="flex items-center justify-center bg-white w-10 h-10 shadow-md shadow-slate-400 rounded-lg px-2 py-2 hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+          >
+            <svg
+              class="w-6 h-6 fill-slate-400 hover:fill-slate-600"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="flex items-center justify-center bg-white w-10 h-10 shadow-md shadow-slate-400 rounded-lg px-2 py-2 hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+          >
+            <svg
+              class="w-5 h-5 fill-slate-400 hover:fill-slate-600"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Instagram</title>
+              <path
+                d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="flex items-center justify-center bg-white w-10 h-10 shadow-md shadow-slate-400 rounded-lg px-2 py-2 hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+          >
+            <svg
+              class="w-5 h-5 fill-slate-400 hover:fill-slate-600"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" 
+            >
+              <title>Github</title>
+              <path
+              d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.084-.729.084-.729 1.204.084 1.837 1.236 1.837 1.236 1.07 1.835 2.807 1.305 3.492.997.107-.775.418-1.305.762-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.468-2.382 1.236-3.22-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.983-.4 3.003-.404 1.02.004 2.043.137 3.004.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.242 2.873.12 3.176.77.838 1.235 1.91 1.235 3.22 0 4.61-2.803 5.624-5.475 5.922.43.372.813 1.104.813 2.224 0 1.606-.015 2.9-.015 3.293 0 .32.192.694.798.576C20.565 21.795 24 17.3 24 12c0-6.628-5.373-12-12-12z"
+              />
+            </svg>
+          </a>
+          
+          </div>
+          <p class="leading-relaxed sm:size-1/2">Create <span class="sm:block">by WahyuTrisnoAji. |&copy; 2024.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
   </body>
 </html>
