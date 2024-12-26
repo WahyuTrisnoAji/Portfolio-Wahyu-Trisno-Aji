@@ -9,6 +9,30 @@
     <title>Portfolio</title>
 
     <style>
+      .humburger-line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #020617;
+        margin: 4px 0;
+      }
+
+      .humburger-active > span:nth-child(1) {
+        transform-origin: top-left;
+        transform: rotate(45deg);
+      }
+
+      .humburger-active > span:nth-child(2) {
+        transform: scale(0);
+      }
+
+      .humburger-active > span:nth-child(3) {
+        transform-origin: bottom-left;
+        transform: rotate(-45deg);
+      }
+
+      
+
       /* activities section */
       .no-scrollbar {
           scrollbar-width: none; 
@@ -36,11 +60,29 @@
       .hover\:shadow-lg:hover {
          box-shadow: 0 8px 24px rgba(0, 123, 255, 0.5); 
       }
-
-
     </style>
   </head>
-  <body>
+  <body class="scroll-smooth">
+
+
+    <header class="bg-transparent absolute top-0 z-50 left-0 w-full flex items-center">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="block py-6"> <img src="Assets/logo-icon.webp" alt="" class="w-28"></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="humburger" name="humburger" type="button" class="block absolute right-4">
+              <span class="humburger-line"></span>
+              <span class="humburger-line"></span>
+              <span class="humburger-line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+
     <!-- section hero -->
     <section id="home" class="pt-36 bg-cover bg-center bg-no-repeat relative z-0"
     style="background-image: url('Assets/asfalt--light--1920x1080.png')">
@@ -93,6 +135,22 @@
                   />
                 </svg>
               </a>
+              <a
+            href="#"
+            class="flex items-center justify-center bg-white w-10 h-10 shadow-md shadow-slate-400 rounded-lg px-2 py-2 hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+          >
+            <svg
+              class="w-5 h-5 fill-slate-400 hover:fill-slate-600"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" 
+            >
+              <title>Github</title>
+              <path
+              d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.084-.729.084-.729 1.204.084 1.837 1.236 1.837 1.236 1.07 1.835 2.807 1.305 3.492.997.107-.775.418-1.305.762-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.468-2.382 1.236-3.22-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.983-.4 3.003-.404 1.02.004 2.043.137 3.004.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.242 2.873.12 3.176.77.838 1.235 1.91 1.235 3.22 0 4.61-2.803 5.624-5.475 5.922.43.372.813 1.104.813 2.224 0 1.606-.015 2.9-.015 3.293 0 .32.192.694.798.576C20.565 21.795 24 17.3 24 12c0-6.628-5.373-12-12-12z"
+              />
+            </svg>
+          </a>
             </div>
           </div>
 
@@ -307,6 +365,7 @@
      </section>
 
 
+     <!-- section activity -->
      <section id="activity" class="py-36 bg-slate-200">
       <div class="container">
         <div class="flex flex-col items-center justify-center text-center">
@@ -381,9 +440,10 @@
       </div>
     </section>
 
+    <!-- footer -->
     <footer id="footer" class="pb-8">
       <div class="container">
-        <div class="flex items-center justify-between text-center">
+        <div class="flex items-center justify-between text-center sm:flex-row flex-col gap-4">
           <div class="flex gap-4">
             <a
             href="#"
@@ -433,7 +493,7 @@
           </a>
           
           </div>
-          <p class="leading-relaxed sm:size-1/2">Create <span class="sm:block">by WahyuTrisnoAji. |&copy; 2024.</span>
+          <p class="leading-relaxed sm:size-1/2 text-primary">Create by <span class="text-blue-900">WahyuTrisnoAji.</span> |&copy; 2024.
           </p>
         </div>
       </div>
