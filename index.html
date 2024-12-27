@@ -7,31 +7,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <title>Portfolio</title>
-
+    <script src="https://unpkg.com/feather-icons"></script>
     <style>
-      .humburger-line {
-        display: block;
-        width: 30px;
-        height: 2px;
-        background-color: #020617;
-        margin: 4px 0;
+      /* navbar */
+      .navbar {
+        backdrop-filter: blur(5px);
       }
 
-      .humburger-active > span:nth-child(1) {
-        transform-origin: top-left;
-        transform: rotate(45deg);
-      }
-
-      .humburger-active > span:nth-child(2) {
-        transform: scale(0);
-      }
-
-      .humburger-active > span:nth-child(3) {
-        transform-origin: bottom-left;
-        transform: rotate(-45deg);
-      }
-
-      
 
       /* activities section */
       .no-scrollbar {
@@ -63,25 +45,36 @@
     </style>
   </head>
   <body class="scroll-smooth">
-
-
-    <header class="bg-transparent absolute top-0 z-50 left-0 w-full flex items-center">
-      <div class="container">
-        <div class="flex items-center justify-between relative">
-          <div class="px-4">
-            <a href="#home" class="block py-6"> <img src="Assets/logo-icon.webp" alt="" class="w-28"></a>
-          </div>
-          <div class="flex items-center px-4">
-            <button id="humburger" name="humburger" type="button" class="block absolute right-4">
-              <span class="humburger-line"></span>
-              <span class="humburger-line"></span>
-              <span class="humburger-line"></span>
-            </button>
-          </div>
-        </div>
+    <!-- navbar -->
+    <nav class="navbar fixed top-0 left-0 right-0 bg-white opacity-80 border-b border-primary z-50 px-4 flex justify-between items-center">
+      <a href="#" class="navbar-logo w-24 items-center">
+       <img src="Assets/logo-icon.webp" alt="">
+      </a>
+      <div class="navbar-nav gap-8 hidden lg:flex space-x-4 items-center">
+        <a href="#home" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Home</a>
+        <a href="#services" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Services</a>
+        <a href="#portfolio" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Portfolio</a>
+        <a href="#Skills-experiences" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Skills</a>
+        <a href="#activity" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Activity</a>
+        <a href="#contact" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Contact</a>
+        <a href="Assets/CV WAHYU TRISNO AJI.pdf" target="_blank" title="CV Wahyu Trisno Aji" class="border border-primary p-1 rounded-md relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Resume</a>
       </div>
-    </header>
+      <div class="navbar-ekstra flex space-x-4">
+        <a href="#" id="humburger-menu" class="text-primary hover:text-blue-800 lg:hidden text-2xl">&#9776;</a>
+      </div>
+    </nav>
     
+    <div class="navbar-nav-mobile z-10 lg:hidden fixed right-0 mt-[74px] bg-white opacity-80 w-72 h-full transform translate-x-full transition-transform duration-300">
+      <div class=" flex flex-col items-center justify-center gap-8 pt-6">
+        <a href="#home" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Home</a>
+        <a href="#services" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Services</a>
+        <a href="#portfolio" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Portfolio</a>
+        <a href="#Skills-experiences" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Skills</a>
+        <a href="#activity" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Activity</a>
+        <a href="#contact" class="relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Contact</a>
+        <a href="Assets/CV WAHYU TRISNO AJI.pdf" target="_blank" class="border border-primary p-2 rounded-md relative text-black hover:text-primary after:content-[''] after:block after:border-b-[1px] after:border-primary after:scale-x-0 hover:after:scale-x-50 after:transition-transform after:duration-200">Resume</a>
+      </div>
+    </div>
 
     <!-- section hero -->
     <section id="home" class="pt-36 bg-cover bg-center bg-no-repeat relative z-0"
